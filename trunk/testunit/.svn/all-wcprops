@@ -1,0 +1,107 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/clinkc/!svn/ver/684/trunk/testunit
+END
+TestDevice.c
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/clinkc/!svn/ver/572/trunk/testunit/TestDevice.c
+END
+ClinkTestCaseSubscription.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/clinkc/!svn/ver/557/trunk/testunit/ClinkTestCaseSubscription.cpp
+END
+ClinkTestCase.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/clinkc/!svn/ver/684/trunk/testunit/ClinkTestCase.h
+END
+ClinkTestCaseStateVariable.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/clinkc/!svn/ver/557/trunk/testunit/ClinkTestCaseStateVariable.cpp
+END
+TestDevice.h
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svnroot/clinkc/!svn/ver/572/trunk/testunit/TestDevice.h
+END
+ClinkUnitTest.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/clinkc/!svn/ver/632/trunk/testunit/ClinkUnitTest.h
+END
+ClinkTestCaseNetwork.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/clinkc/!svn/ver/550/trunk/testunit/ClinkTestCaseNetwork.cpp
+END
+ClinkTestCaseControlPoint.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/clinkc/!svn/ver/546/trunk/testunit/ClinkTestCaseControlPoint.cpp
+END
+ClinkUnitTest.m
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/clinkc/!svn/ver/632/trunk/testunit/ClinkUnitTest.m
+END
+ClinkTestCaseURI.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/clinkc/!svn/ver/684/trunk/testunit/ClinkTestCaseURI.cpp
+END
+ClinkTestCaseDevice.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/clinkc/!svn/ver/573/trunk/testunit/ClinkTestCaseDevice.cpp
+END
+ClinkTestCaseService.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/clinkc/!svn/ver/684/trunk/testunit/ClinkTestCaseService.cpp
+END
+ClinkTestCaseDictionary.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svnroot/clinkc/!svn/ver/498/trunk/testunit/ClinkTestCaseDictionary.cpp
+END
+cppunitmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/clinkc/!svn/ver/537/trunk/testunit/cppunitmain.cpp
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/clinkc/!svn/ver/243/trunk/testunit/Makefile.am
+END
+ClinkTestCaseHttp.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/clinkc/!svn/ver/538/trunk/testunit/ClinkTestCaseHttp.cpp
+END
+ClinkTestCase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svnroot/clinkc/!svn/ver/273/trunk/testunit/ClinkTestCase.cpp
+END

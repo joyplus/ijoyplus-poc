@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/clinkc/!svn/ver/666/trunk/std/av/sample/upnpavserver/filesystem
+END
+cdms_filesys_http.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/653/trunk/std/av/sample/upnpavserver/filesystem/cdms_filesys_http.c
+END
+cdms_filesys.c
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/clinkc/!svn/ver/653/trunk/std/av/sample/upnpavserver/filesystem/cdms_filesys.c
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavserver/filesystem/Makefile.am
+END
+cdms_filesys_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/666/trunk/std/av/sample/upnpavserver/filesystem/cdms_filesys_main.c
+END
+cdms_filesys.h
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/clinkc/!svn/ver/653/trunk/std/av/sample/upnpavserver/filesystem/cdms_filesys.h
+END
+cdms_filesys_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/653/trunk/std/av/sample/upnpavserver/filesystem/cdms_filesys_data.c
+END

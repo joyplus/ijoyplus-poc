@@ -1,0 +1,101 @@
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/svnroot/clinkc/!svn/ver/692/trunk
+END
+configure
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/clinkc/!svn/ver/690/trunk/configure
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/clinkc/!svn/ver/689/trunk/Makefile.in
+END
+Doxyfile
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/clinkc/!svn/ver/635/trunk/Doxyfile
+END
+AUTHORS
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/clinkc/!svn/ver/590/trunk/AUTHORS
+END
+configure.in
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/clinkc/!svn/ver/690/trunk/configure.in
+END
+ChangeLog
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/clinkc/!svn/ver/692/trunk/ChangeLog
+END
+README
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/svnroot/clinkc/!svn/ver/177/trunk/README
+END
+Doxyfile.objc
+K 25
+svn:wc:ra_dav:version-url
+V 48
+/svnroot/clinkc/!svn/ver/638/trunk/Doxyfile.objc
+END
+config.h.in
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/clinkc/!svn/ver/689/trunk/config.h.in
+END
+DoxyFooterFile
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/svnroot/clinkc/!svn/ver/635/trunk/DoxyFooterFile
+END
+INSTALL
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/clinkc/!svn/ver/177/trunk/INSTALL
+END
+COPYING
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/svnroot/clinkc/!svn/ver/628/trunk/COPYING
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 46
+/svnroot/clinkc/!svn/ver/558/trunk/Makefile.am
+END
+clinkc.pc.in
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svnroot/clinkc/!svn/ver/177/trunk/clinkc.pc.in
+END
+NEWS
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/svnroot/clinkc/!svn/ver/177/trunk/NEWS
+END
+bootstrap
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svnroot/clinkc/!svn/ver/558/trunk/bootstrap
+END

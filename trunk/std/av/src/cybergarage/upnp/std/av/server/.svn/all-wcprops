@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/clinkc/!svn/ver/674/trunk/std/av/src/cybergarage/upnp/std/av/server
+END
+cconnectionmgr_service.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/clinkc/!svn/ver/566/trunk/std/av/src/cybergarage/upnp/std/av/server/cconnectionmgr_service.c
+END
+cmediaserver_device.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/clinkc/!svn/ver/654/trunk/std/av/src/cybergarage/upnp/std/av/server/cmediaserver_device.c
+END
+ccontentdir_service.c
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/clinkc/!svn/ver/674/trunk/std/av/src/cybergarage/upnp/std/av/server/ccontentdir_service.c
+END

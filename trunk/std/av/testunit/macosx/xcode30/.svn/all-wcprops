@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/clinkc/!svn/ver/438/trunk/std/av/testunit/macosx/xcode30
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/testunit/macosx/xcode30/main.m
+END
+ClinkAVTestUnitBundle-Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/testunit/macosx/xcode30/ClinkAVTestUnitBundle-Info.plist
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/testunit/macosx/xcode30/Info.plist
+END
+ClinkAVTestUnit_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/testunit/macosx/xcode30/ClinkAVTestUnit_Prefix.pch
+END

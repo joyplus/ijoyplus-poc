@@ -1,0 +1,17 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svnroot/clinkc/!svn/ver/689/trunk/lib/unix
+END
+Makefile.in
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/clinkc/!svn/ver/689/trunk/lib/unix/Makefile.in
+END
+Makefile.am
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svnroot/clinkc/!svn/ver/537/trunk/lib/unix/Makefile.am
+END

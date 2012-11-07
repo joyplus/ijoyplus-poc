@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/clinkc/!svn/ver/561/trunk/std/av/sample/upnpavserver/youtube
+END
+License
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/youtube/License
+END
+cdms_youtube_http.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavserver/youtube/cdms_youtube_http.c
+END
+cdms_youtube.c
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavserver/youtube/cdms_youtube.c
+END
+cdms_youtube_update.c
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavserver/youtube/cdms_youtube_update.c
+END
+cdms_youtube.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavserver/youtube/cdms_youtube.h
+END
+cdms_youtube_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/youtube/cdms_youtube_data.c
+END

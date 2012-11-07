@@ -1,0 +1,113 @@
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005
+END
+MainFrm.h
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/MainFrm.h
+END
+stdafx.h
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/stdafx.h
+END
+Resourcesp.h
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/Resourcesp.h
+END
+resourceppc.h
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/resourceppc.h
+END
+COptionDialog.h
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/COptionDialog.h
+END
+CDmsMobilePhoto.sln
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhoto.sln
+END
+CDmsMobilePhoto.vcproj
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhoto.vcproj
+END
+CDmsMobilePhotosp.rc
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhotosp.rc
+END
+CDmsMobilePhotoppc.rc
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhotoppc.rc
+END
+CDmsMobilePhotoDoc.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhotoDoc.cpp
+END
+CDmsMobilePhotoView.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhotoView.cpp
+END
+CDmsMobilePhotoDoc.h
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhotoDoc.h
+END
+CDmsMobilePhotoView.h
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhotoView.h
+END
+CDmsMobilePhoto.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 105
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhoto.cpp
+END
+stdafx.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 96
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/stdafx.cpp
+END
+MainFrm.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/MainFrm.cpp
+END
+COptionDialog.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/COptionDialog.cpp
+END
+CDmsMobilePhoto.h
+K 25
+svn:wc:ra_dav:version-url
+V 103
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavserver/filesystem/wince/vs2005/CDmsMobilePhoto.h
+END

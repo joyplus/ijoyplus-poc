@@ -1,0 +1,71 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/sample/upnpavplayer/macosx/xcode30
+END
+DLNAMovieView.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAMovieView.h
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/main.m
+END
+DLNAAudioView.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAAudioView.h
+END
+DLNAImageView.h
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAImageView.h
+END
+DLNAMovieView.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAMovieView.m
+END
+Info.plist
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/Info.plist
+END
+DLNAAudioView.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAAudioView.m
+END
+DLNAImageView.m
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAImageView.m
+END
+DLNAController.h
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAController.h
+END
+upnpavplayer_Prefix.pch
+K 25
+svn:wc:ra_dav:version-url
+V 100
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/upnpavplayer_Prefix.pch
+END
+DLNAController.m
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/sample/upnpavplayer/macosx/xcode30/DLNAController.m
+END

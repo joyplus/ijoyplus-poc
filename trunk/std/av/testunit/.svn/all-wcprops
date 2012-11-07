@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svnroot/clinkc/!svn/ver/562/trunk/std/av/testunit
+END
+ClinkAVTestCase.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/clinkc/!svn/ver/554/trunk/std/av/testunit/ClinkAVTestCase.cpp
+END
+cppunitmain.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/clinkc/!svn/ver/554/trunk/std/av/testunit/cppunitmain.cpp
+END
+ClinkAVTestCase.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/clinkc/!svn/ver/554/trunk/std/av/testunit/ClinkAVTestCase.h
+END
+ClinkAVTestCaseRenderer.cpp
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/clinkc/!svn/ver/560/trunk/std/av/testunit/ClinkAVTestCaseRenderer.cpp
+END

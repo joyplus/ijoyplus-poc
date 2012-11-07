@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svnroot/clinkc/!svn/ver/672/trunk/std/av/src/cybergarage/upnp/std/av/renderer
+END
+crenderingcontrol_service.c
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svnroot/clinkc/!svn/ver/570/trunk/std/av/src/cybergarage/upnp/std/av/renderer/crenderingcontrol_service.c
+END
+cavtransport_service.c
+K 25
+svn:wc:ra_dav:version-url
+V 101
+/svnroot/clinkc/!svn/ver/672/trunk/std/av/src/cybergarage/upnp/std/av/renderer/cavtransport_service.c
+END
+cmediarenderer_device.c
+K 25
+svn:wc:ra_dav:version-url
+V 102
+/svnroot/clinkc/!svn/ver/658/trunk/std/av/src/cybergarage/upnp/std/av/renderer/cmediarenderer_device.c
+END
+cconnectionmgrr_service.c
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svnroot/clinkc/!svn/ver/658/trunk/std/av/src/cybergarage/upnp/std/av/renderer/cconnectionmgrr_service.c
+END

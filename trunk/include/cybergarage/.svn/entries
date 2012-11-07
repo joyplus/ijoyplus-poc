@@ -1,0 +1,83 @@
+10
+
+dir
+692
+https://clinkc.svn.sourceforge.net/svnroot/clinkc/trunk/include/cybergarage
+https://clinkc.svn.sourceforge.net/svnroot/clinkc
+
+
+
+2012-01-18T15:21:54.152642Z
+684
+skonno
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+bfd3be0d-9f21-0410-925f-e30e9767a5cc
+
+http
+dir
+
+xml
+dir
+
+soap
+dir
+
+upnp
+dir
+
+net
+dir
+
+typedef.h
+file
+
+
+
+
+2012-11-05T10:35:50.000000Z
+e0a1d952600ca7c6276b4bdd7399c5ae
+2008-09-04T17:12:33.952346Z
+420
+skonno
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1981
+
+io
+dir
+
+util
+dir
+

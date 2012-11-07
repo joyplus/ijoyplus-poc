@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/clinkc/!svn/ver/691/trunk/std/av/include/cybergarage/upnp/std/av
+END
+cmediarenderer.h
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/clinkc/!svn/ver/570/trunk/std/av/include/cybergarage/upnp/std/av/cmediarenderer.h
+END
+cmediaserver.h
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/clinkc/!svn/ver/642/trunk/std/av/include/cybergarage/upnp/std/av/cmediaserver.h
+END
+cresource.h
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/clinkc/!svn/ver/607/trunk/std/av/include/cybergarage/upnp/std/av/cresource.h
+END
+cupnpav.h
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svnroot/clinkc/!svn/ver/519/trunk/std/av/include/cybergarage/upnp/std/av/cupnpav.h
+END
+ccontent.h
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/svnroot/clinkc/!svn/ver/691/trunk/std/av/include/cybergarage/upnp/std/av/ccontent.h
+END
+cdidl.h
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/clinkc/!svn/ver/516/trunk/std/av/include/cybergarage/upnp/std/av/cdidl.h
+END
+cprotocolinfo.h
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/clinkc/!svn/ver/665/trunk/std/av/include/cybergarage/upnp/std/av/cprotocolinfo.h
+END
+cmd5.h
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/clinkc/!svn/ver/516/trunk/std/av/include/cybergarage/upnp/std/av/cmd5.h
+END

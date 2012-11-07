@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/clinkc/!svn/ver/691/trunk/std/av/src/cybergarage/upnp/std/av
+END
+cdidl.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svnroot/clinkc/!svn/ver/516/trunk/std/av/src/cybergarage/upnp/std/av/cdidl.c
+END
+cprotocolinfo.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/clinkc/!svn/ver/582/trunk/std/av/src/cybergarage/upnp/std/av/cprotocolinfo.c
+END
+cresource_data.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/clinkc/!svn/ver/516/trunk/std/av/src/cybergarage/upnp/std/av/cresource_data.c
+END
+cresource_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/src/cybergarage/upnp/std/av/cresource_list.c
+END
+ccontent_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svnroot/clinkc/!svn/ver/434/trunk/std/av/src/cybergarage/upnp/std/av/ccontent_list.c
+END
+cmd5.c
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/src/cybergarage/upnp/std/av/cmd5.c
+END
+cresource.c
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svnroot/clinkc/!svn/ver/691/trunk/std/av/src/cybergarage/upnp/std/av/cresource.c
+END
+cprotocolinfo_list.c
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/svnroot/clinkc/!svn/ver/537/trunk/std/av/src/cybergarage/upnp/std/av/cprotocolinfo_list.c
+END
+ccontent.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svnroot/clinkc/!svn/ver/644/trunk/std/av/src/cybergarage/upnp/std/av/ccontent.c
+END
