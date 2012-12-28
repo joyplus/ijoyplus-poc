@@ -1,0 +1,653 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0021)http://www.xiaomi.cn/ -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=7" />
+        <title>悦享TV-上海志精科技</title>
+        <meta name="keywords" content="志精科技,娱乐生活分享引擎,视频，悦视频，智能电视，电影，电视剧，综艺，聚合，悦享家，悦享TV，视频盒子" />
+        <meta name="description" content="悦享社区是悦享手机官方提供的300万米粉互动交流的社区，包含悦享手机学院、米粉同城会、悦享手机软件下载、酷玩帮、摄影比赛等众多内容分类，悦享社区是深受米粉喜爱的网站，悦享手机官网,悦享手机1,悦享手机1S,悦享手机2，Mi1,Mi2。" />
+        <link href="public/css/reset.css" rel="stylesheet" type="text/css" />
+        <link href="public/css/xiaomi_default.css" rel="stylesheet" type="text/css" />
+        <script type="text/javascript" src="public/js/jquery.min.js"></script>
+        <script type="text/javascript" src="public/js/jquery.sgallery.js"></script>
+        <script type="text/javascript" src="public/js/search_common.js"></script>
+    </head>
+<body>
+    <div class="header">
+        <div class="headerTop">
+           <dl class="bbsNav">
+            <!--{loop $_G['setting']['topnavs'][0] $nav}-->
+            <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}--><dd>$nav[code]</dd><!--{/if}-->
+            <!--{/loop}-->
+           </dl>
+            
+            <div class="otherNav">
+                <a href="/member.php?mod=logging&action=login">登录</a>|<a href="/member.php?mod=register">注册</a> 
+            </div>
+        </div>
+            
+        <div class="headerBody">
+            <div class="logo"><a href=""><img src="public/images/joylogo.png" width="204" height="93" alt="悦享社区" title="悦享社区"></a></div>
+            <div class="adList"> </div>
+            <div class="nav-bar">
+                <ul class="nav-site" id="navSite">
+                    <!--{loop $_G['setting']['navs'] $nav}-->
+                    <!--{if $nav['available'] && (!$nav['level'] || ($nav['level'] == 1 && $_G['uid']) || ($nav['level'] == 2 && $_G['adminid'] > 0) || ($nav['level'] == 3 && $_G['adminid'] == 1))}--><li {if $mnid == $nav[navid]}class="a" {/if}$nav[nav]></li><!--{/if}-->
+                    <!--{/loop}-->
+                </ul>
+            </div>
+        </div>
+    </div>
+<!--main-->
+<div class="main">
+    <div class="indexBanner"><a href="" target="_blank"><img src="public/images/banner.jpg" border="0"></a></div>        
+    <!--首页焦点-->
+    <div class="indexPublic">
+        公告：<!--{block/47}-->
+    </div>
+    <div id="indexSearch" class="indexSearch">
+        <span>输入您要找的内容...</span>
+        <input type="text" id="indexTxtSearch" name="indexTxtSearch" value="">
+            <a href="javascript:void(0);" onclick="iSearch.post();"><img src="public/images/btnSearch.jpg" width="59" height="32" alt="搜索" title="搜索"></a>
+    </div>
+    <div class="indexLeft">
+        <!-- 热点图  -->
+        <div class="indexPicHost" id="indexPicHost">
+            <div class="FocusPic">
+                <div class="content" id="main-slide" style="width: 298px; height: 413px;">
+                    <div class="changeDiv">  
+                        <!--{block/43}-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 热贴排行 -->
+        <div class="indexRankList box">
+            <h5><span class="rt fn f12 tab SwapTab"><span class="fb">本月</span></span><strong>热贴排行</strong></h5>
+            <!--{block/20}-->
+        </div>
+        
+    </div>
+    <div class="indexMiddle">
+        <!-- 头条 -->
+        <div class="indexTopic box">
+            <dl class="siteCircle-d">
+                <dt>
+                    <!--{block/22}-->
+                    <!--{block/21}-->
+                </dt>
+                <span class="splitLine">&nbsp;</span>
+                <!--{block/21}-->
+            </dl>
+        </div>
+    </div>
+
+    <div class="indexRight">
+        <div class="indexAtive indexCommend box">
+            <h5><strong>进行中的活动</strong><cite><a href="#" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite> </h5>
+            <ul>
+                <!--{block/53}-->
+                <a href="http://bbs.joyplus.tv/" target="_blank"><img src="public/images/20120824085250577.gif"></a>
+            </ul>
+        </div>
+        <div class="indexAd">
+            <embed width="100%" height="100%" name="plugin" src="http://js.tudouui.com/bin/player2/olc_8.swf?iid=159432016&amp;swfPath=http://js.tudouui.com/bin/player2/olm_34.swf" type="application/x-shockwave-flash">
+        </div>
+        <!-- 新品推荐 -->
+        <div class="indexCommend box">
+            <h5><strong>新品推荐</strong> <cite><a href="#" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <ul>
+                <!--{block/23}-->
+            </ul>
+        </div>
+    </div>
+    <div class="indexBanner"></div>       
+    <!--悦享学院-->
+    <h2>
+        <strong><a href="xue" target="_blank">悦享学院</a></strong>
+        <em>Skill</em><cite><a href="xue" target="_blank">互助问答</a> / <a href="forum.php?mod=forumdisplay&fid=60" target="_blank">悦粉杂谈</a></cite>
+    </h2>
+
+    <div class="indexLeft">
+        <!-- 玩机技巧 -->
+        <div class="indexPlay indexCommend box">
+            <h5><strong>系统更新</strong> <cite><a href="xue/gengxin" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <ul>
+                <!--{block/28}-->
+            </ul>
+        </div>
+        
+        <!-- 版主推荐 -->
+        <div class="indexBoardCommend indexArtList box">
+            <h5><strong>版主推荐</strong><cite><a href="#" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <ul class="siteCircle-l">
+                <!--{block/24}-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="indexMiddle">
+        <!-- 头条 -->
+        <div class="indexPlayMiddle indexTopic box">		
+            <dl class="siteCircle-d">
+                <dt>
+                    <ol>
+                        <li>
+                          <!--{block/25}-->
+                          <!--{block/26}-->
+                        </li>
+                    </ol>
+                    <div class="bk"></div>
+                </dt>
+                <!--{block/27}-->
+            </dl>
+        </div>
+    </div>
+
+    <div class="indexRight">
+        <!-- 悦享 -->
+        <div id="indexPlayMI" class="indexPlayMI box">
+            <dl class="head">
+                <dd index="0" class="sel">悦享详解</dd>
+                <dd index="1">基础使用</dd>
+                <dd index="2">刷机进阶</dd>
+            </dl>
+            <!--悦享详解-->
+            <ol class="intro introShow" style="display: block;">
+                <!--<li>
+                    <dl class="introList first">
+                        <dt>
+                            <strong>悦享盒子新手入门</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">LOGO含义</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">超低能耗</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">剽悍性能</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">高清大屏</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">样片鉴赏</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">技术百科</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="introList compare">
+                        <dt>
+                            <strong>悦享盒子抢购攻略</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">F码获取渠道大全</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">悦享盒子抢购攻略</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">抢购失败补救措施</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">提升悦享抢购网速</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="introList test">
+                        <dt>
+                            <strong>悦享盒子连接电视</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">悦享盒子安装驱动及连接电脑教程</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">悦享盒子安装驱动及连接电脑教程</a></dd>
+                    </dl>
+                </li>-->
+            </ol>
+            <!--基础使用--><ol class="intro" style="display: none;">
+                <!--<li>
+                    <dl class="introList first">
+                        <dt>
+                            <strong>悦享盒子基础使用教程</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">权限管理</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">自由桌面</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">在线短信</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">悦享网盘</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">关机闹铃</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">共享热点</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="introList compare">
+                        <dt>
+                            <strong>悦享盒子使用小技巧</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">文件远程管理</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">界面美化教程</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">锁屏设动态壁纸</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">找回丢失的资料</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="introList test">
+                        <dt>
+                            <strong>悦享盒子玩机高阶技巧</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">通过手势激活悦享手机2的搜索键</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">轻松录制悦享手机2操作视频</a></dd>
+                    </dl>
+                </li>-->
+            </ol>
+            <!--刷机进阶--><ol class="intro" style="display: none;">
+                <!--<li>
+                    <dl class="introList first">
+                        <dt>
+                            <strong>悦享盒子刷机入门</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">MIUI详解</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">双系统原理</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">OTA详解</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">刷机教程</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">MiFlash教程</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">省电手册</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="introList compare">
+                        <dt>
+                            <strong>悦享盒子刷机进阶</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">MiFlash常见问题</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">详解Recovery</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">详解数据清除</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">无法刷机解决方案</a></dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="introList test">
+                        <dt>
+                            <strong>悦享手机高手刷机</strong></dt>
+                        <dd>
+                            <a target="_blank" href="#">悦享盒子刷机普及精髓和问题汇总</a></dd>
+                        <dd>
+                            <a target="_blank" href="#">悦享刷机流程攻略及各系统特点</a></dd>
+                    </dl>
+                </li>-->
+            </ol>
+        </div>
+    
+        <div class="indexAd">
+            <!--{block/46}-->
+        </div>
+    </div>        
+    <div class="bk"></div>
+          
+    <!--同城会-->
+    <h2>
+        <strong><a href="city/" target="_blank">同城会</a></strong>
+        <em>Activity</em>	<cite>
+            <a href="city/xinwen/" target="_blank">同城新闻</a> / <a href="city/huodong/">同城活动</a> / <a href="city/meitu/">同城美图</a> / <a href="city/meishi/">同城美食</a> / <a href="city/youji/">同城游记</a> / <a href="city/yule/">同城娱乐</a></cite>
+    </h2>
+
+    <div class="indexLeft">
+        <!-- 热点图  -->
+        <div class="indexCityHot indexPicHost">
+            <!--推荐位-->
+            <!--{block/48}-->
+                            
+        </div>
+        <!-- 同城生活 -->
+        <div class="indexCityLive indexPlay indexCommend box">
+            <h5><strong>同城杂谈</strong> <cite><a href="group.php" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <ul>
+                <!--推荐位-->
+                <li class="pic">
+                    <!--{block/35}-->
+                </li>
+    
+                <!--{block/36}-->
+            </ul>
+        </div>
+    </div>
+
+    <div class="indexMiddle">
+
+        <div class="indexCityComment box">	
+            <h5><strong>同城生活</strong> <cite><a href="group.php" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <dl>
+                <dt>
+                    <!--推荐位-->
+                    <strong><!--{block/51}--></strong>
+                   <!--{block/52}-->
+                </dt>
+                <!--{block/29}-->
+            </dl>
+        </div>
+
+        <div class="indexCityTopic indexCityComment box">	
+            <h5><strong>同城活动</strong> <cite><a href="city/huodong/" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <dl>
+                <dt>
+                    <!--推荐位-->
+                    <strong><!--{block/33}--></strong>
+                   <!--{block/34}-->
+                </dt>
+                <!--{block/49}-->
+            </dl>
+        </div>
+    </div>
+
+    <div class="indexRight">
+        <div class="indexInform indexAtive indexCommend box">
+            <h5><strong>活动预告</strong><cite><a href="city/huodong/" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite> </h5>
+            <ul>
+                <!--{block/37}-->			
+            </ul>
+        </div>
+
+        <div class="indexCityStar box">	
+            <h5><strong>同城名人</strong> <cite><a href="group.php" target="_blank">更多</a><img src="public/images/iconMore.jpg" width="14" height="14" alt="-&gt;" title="-&gt;"></cite></h5>
+            <ul>
+                <!--推荐位-->
+                <!--{block/41}-->
+            </ul>
+        </div>
+    </div>
+        
+    <div class="bk"></div>
+    
+    <!--down start-->
+    <h2>
+        <strong><a href="down/" target="_blank">资源下载</a></strong>
+        <em>Download</em>                
+        <cite>
+            <a href="down/yingyong/" target="_blank">应用软件</a> / <a href="down/youxi/" target="_blank">热门游戏</a> / <a href="down/dongman/" target="_blank">影音动漫</a>
+        </cite>
+    </h2>
+    
+        <div class="indexLeft">
+            <!-- 应用首发 -->
+            <div class="indexAppFirst indexCityLive indexPlay indexCommend box">
+                <ul>
+                    <!--{block/42}-->
+                    <!--{block/50}-->
+                </ul>
+            </div>
+         
+          <!-- 社区排行 -->
+         <div id="indexAppDown" class="indexAppDown indexBBSRank indexRankList box">
+            <dl>
+                <dd class="sel" index="0">最新下载</dd>
+                <dd index="1">热门下载</dd>
+            </dl>
+            <ul class="content shw">
+                <!--{block/38}-->
+            </ul>
+            
+            <ul class="content">
+                <!--{block/39}-->
+            </ul>
+
+        </div>
+        </div>
+        
+    <div class="indexRightBig">
+        <!-- 图文推荐 -->
+        <div class="box FocusPic">
+            <div class="content" id="down-slide" style="width: 650px; height: 298px;">
+                <div class="changeDiv">  
+                    <!--{block/44}-->
+                </div>
+                </div>
+        </div>
+        <script type="text/javascript"> 
+$(function(){
+new slide("#down-slide","cur",650,298,1);//焦点图
+})
+        </script>
+
+        <!-- 应用推荐 -->
+        <div id="indexAppComment" class="indexAppComment box">
+            <h5>
+                <ul>
+                    <li class="sel" index="0"><a href="#">最新推荐</a>/</li>
+                    <li index="1"><a href="#">悦粉喜欢</a>/</li>
+                    <li index="2"><a href="#">酷玩应用</a>/</li>
+                    <li index="3"><a href="#">厂商首发</a></li>                            
+                </ul>
+            </h5>
+
+            <ul class="appList appListShow">
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121213114741358.png" width="55" height="55" alt="掌上画板" title="掌上画板"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">掌上画板</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121213111219704.png" width="55" height="55" alt="铁人" title="铁人"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">铁人</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/131357j8dpw9ymvmpqrrpg.png.thumb.jpg" width="55" height="55" alt="一起玩陶艺圣诞版" title="一起玩陶艺圣诞版"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">一起玩陶艺圣诞版</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/101052xqpqe7qy6be2oy76.png.thumb.jpg" width="55" height="55" alt="僵尸粉碎车" title="僵尸粉碎车"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">僵尸粉碎车</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/164537ykmgtjnnrnk2fmmn.png" width="55" height="55" alt="Dopool " title="Dopool "></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">Dopool </a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/153644mmuadnh9q333am6h.png" width="55" height="55" alt="随手写" title="随手写"></a>
+                    <strong><a href="#" target="_blank">随手写</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/175011gksvsru2uck0dmkm.png" width="55" height="55" alt="Instagram" title="Instagram"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">Instagram</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/123029fagfsa3etfz6we5e.png" width="55" height="55" alt="n7player" title="n7player"></a>
+                    <strong><a href="#" target="_blank">n7player</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/172551ft7wrr7d7rnmdnwq.png.thumb.jpg" width="55" height="55" alt="加菲猫总动员2" title="加菲猫总动员2"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">加菲猫总动员</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/184909gpec94b9oj8j8ejs.png.thumb.jpg" width="55" height="55" alt="龙斯派罗巡逻者 " title="龙斯派罗巡逻者 "></a>
+                    <strong><a href="#" target="_blank">龙斯派罗巡逻者 </a></strong>
+                </li>
+    
+            </ul>
+
+            <ul class="appList">
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/122447qvts3pnzlopnolbz.jpg" width="55" height="55" alt="Adblock Plus" title="Adblock Plus"></a>
+                    <strong><a href="#" target="_blank">Adblock Plus</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/210535lt5rrhsabma45nmw.png.thumb.jpg" width="55" height="55" alt="屠龙者" title="屠龙者"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">屠龙者</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121213104305481.png" width="55" height="55" alt="雷电复刻版" title="雷电复刻版"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">雷电复刻版</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/164537ykmgtjnnrnk2fmmn.png" width="55" height="55" alt="Dopool " title="Dopool "></a>
+                    <strong><a href="#" target="_blank">Dopool </a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121212122133350.png" width="55" height="55" alt="午夜狂飙" title="午夜狂飙"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">午夜狂飙</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/123752ag1247h262x2mg32.png.thumb.jpg" width="55" height="55" alt="卡通战争" title="卡通战争"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">卡通战争</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/103428u7ul7nkzrkatnssc.png.thumb.jpg" width="55" height="55" alt="飞天鲸鱼" title="飞天鲸鱼"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">飞天鲸鱼</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/20121212105444445.png" width="55" height="55" alt="踢老板2" title="踢老板2"></a>
+                    <strong><a href="#" target="_blank">踢老板</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/112047tie8q7whqqlchwgg.png" width="55" height="55" alt="Floating Image" title="Floating Image"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">Floating Image</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/20121211022222949.png" width="55" height="55" alt="宝贝来吧" title="宝贝来吧"></a>
+                    <strong><a href="#" target="_blank">宝贝来吧</a></strong>
+                </li>
+        
+            </ul>
+
+            <ul class="appList">
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/20121213114741358.png" width="55" height="55" alt="掌上画板" title="掌上画板"></a>
+                    <strong><a href="#" target="_blank">掌上画板</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121213112448259.png" width="55" height="55" alt="疯狂漂移2 " title="疯狂漂移2 "></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">疯狂漂移</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121213110105190.png" width="55" height="55" alt="神奇的阿力" title="神奇的阿力"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">神奇的阿力</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/170716jbmtx06ntze6xnrh.jpg.thumb.jpg" width="55" height="55" alt="极速赛车" title="极速赛车"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">极速赛车</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/094228mc5e500m05d00500.png" width="55" height="55" alt="XDA助手" title="XDA助手"></a>
+                    <strong><a href="#" target="_blank">XDA助手</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/131038d075u7kp4bp5c99c.png.thumb.jpg" width="55" height="55" alt="撕裂的末日" title="撕裂的末日"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">撕裂的末日</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/124805xe1or01o0pg0gri0.png.thumb.jpg" width="55" height="55" alt="反恐突击队" title="反恐突击队"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">反恐突击队</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/133241qltwctlt0ttwtpzc.png" width="55" height="55" alt="内存加速器" title="内存加速器"></a>
+                    <strong><a href="#" target="_blank">内存加速器</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/161953llfkimi35fkkhmq5.png.thumb.jpg" width="55" height="55" alt="死亡绝境" title="死亡绝境"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">死亡绝境</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/101025o06zg3grx6y76gie.jpg.thumb.jpg" width="55" height="55" alt="刀叶如飞" title="刀叶如飞"></a>
+                    <strong><a href="#" target="_blank">刀叶如飞</a></strong>
+                </li>
+        
+            </ul>
+
+            <ul class="appList">
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121211051510659.png" width="55" height="55" alt="豆瓣电影" title="豆瓣电影"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">豆瓣电影</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121211042244304.png" width="55" height="55" alt="傲游云浏览器" title="傲游云浏览器"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">傲游云浏览器</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/20121210091420768.png" width="55" height="55" alt="小福信用卡" title="小福信用卡"></a>
+                    <strong><a href="#" target="_blank">小福信用卡</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121207052840387.png" width="55" height="55" alt="中文NBA" title="中文NBA"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">中文NBA</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/111728wr4684264r28f2be.png.thumb.jpg" width="55" height="55" alt="1号店" title="1号店"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">1号店</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/115416t4tggbrhgg48gu4b.png.thumb.jpg" width="55" height="55" alt="杂志邦" title="杂志邦"></a>
+                    <strong><a href="#" target="_blank">杂志邦</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/20121206094736703.png" width="55" height="55" alt="穷游锦囊" title="穷游锦囊"></a>
+                    <strong><a href="#" target="_blank">穷游锦囊</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/20121205070930998.jpg" width="55" height="55" alt="随手记" title="随手记"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank">随手记</a></strong>
+                </li>
+                <li>
+                    <a href="#" target="_blank"><img src="public/images/134554vilalal16udldlld.png.thumb.jpg" width="55" height="55" alt="UG生活网" title="UG生活网"></a>
+                    <strong><a href="#" target="_blank">UG生活网</a></strong>
+                </li>
+                <li>
+                    <a href="http://www.gfan.com/plus/search.php" target="_blank"><img src="public/images/173405xtmk3y36ynnuyycy.png.thumb.jpg" width="55" height="55" alt=" 猎豹浏览器" title=" 猎豹浏览器"></a>
+                    <strong><a href="http://www.gfan.com/plus/search.php" target="_blank"> 猎豹浏览器</a></strong>
+                </li>
+        
+            </ul>
+        </div>
+    </div>
+        
+<div class="bk"></div>
+<!--down end-->
+    <!--友情链接-->
+    <div class="friendLink">
+    <h5>友情链接</h5>
+    <ul>
+        <li><a href="http://weibo.com/u/2932990467" title="官方网站" target="_blank"><img src="public/images/joyplus.png" width="88" height="31"></a></li>
+        <li><a href="http://www.joyplus.tv" title="志精网络科技" target="_blank"><img src="public/images/zhijing.png" width="88" height="31"></a></li>
+        <li><a href="http://weibo.com/u/2932990467" title="关注我们" target="_blank"><img src="public/images/weibo.png" width="88" height="31"></a></li>
+    </ul>
+</div>    
+<div class="bk"></div>
+</div>
+<script type="text/javascript" src="public/js/index.js"></script>
+<script type="text/javascript"> 
+    $(function(){
+        new slide("#main-slide","cur",298,413,1);//焦点图
+        new SwapTab(".SwapTab","span",".tab-content","ul","fb");//排行TAB
+        iSearch.init();
+        indexPlayMISwitch();
+        indexAppDownSwitch();
+        indexAppCommentSwitch();
+        indexAppPicCommentSwitch();
+        photoPage.init();	
+        indexNavBottom();
+    })
+</script>
+<!-- site sub footer -->
+<div class="subfooter">
+	<p class="body">
+    	<a href=""><img src="public/images/footerlogo.png" width="160" height="44" class="xiaomiLogo"></a>
+        <img src="public/images/footerGang.jpg" width="43" height="55" class="footerGang">
+        <ins> </ins>
+        <span>
+            <a href="http://www.joyplus.tv/about/about.html" target="_blank">关于悦享TV</a>
+            <a href="http://www.joyplus.tv/about/join.html" target="_blank">悦享TV招聘</a>
+            <a href="http://www.joyplus.tv/about/about.html" target="_blank">联系我们</a>
+            旗下网站：
+            <a href="http://www.joyplus.tv/" target="_blank">悦享TV网</a>
+        </span>
+    </p>
+</div>
+</body>
+</html>
