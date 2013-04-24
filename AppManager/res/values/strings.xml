@@ -4,5 +4,6 @@
     <string name="app_name">AppManager</string>
     <string name="menu_settings">Settings</string>
     <string name="hello_world">Hello world!</string>
+    <string name="text">Goodbye the cruel world!</string>
 
 </resources>
