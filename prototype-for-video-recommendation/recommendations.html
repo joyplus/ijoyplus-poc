@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RecommentVideo</title>
+  <link data-turbolinks-track="true" href="assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/daterangepicker-bs3.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/index.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/application.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="assets/jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/jquery.flot.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/bootstrap.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/daterangepicker.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/moment.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/application.js?body=1"></script>
+  <script src="http://cdn.bootcss.com/Chart.js/0.2.0/Chart.min.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="uDNzZTiyOCzCcdQgvNjuH4xUUKd3OA5WIAfOmqhNJpo=" name="csrf-token" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+      <div id="top">
+        <!-- .navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <header class="navbar-header">
+            <a href="/" class="navbar-brand">
+              <img alt="Logo" src="assets/logo.png" />
+            </a>
+          </header>
+          <div class="topnav">
+            <div class="btn-toolbar">
+              <div class="btn-group">
+                <a href="login.html" data-toggle="tooltip" data-original-title="注销" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+                  <span class="glyphicon glyphicon-off"></span>
+                </a>
+              </div>
+            </div>
+          </div><!-- /.topnav --> <!-- 
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="">
+                <a href="/">概述</a>
+              </li>
+
+              <li class='dropdown active'>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  个性化推荐 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/index/report">推荐报告</a> </li>
+                  <li> <a href="/recommendations">所有推荐</a> </li>
+                  <li> <a href="/recommendations/new">新建推荐</a> </li>
+                </ul>
+              </li>
+
+              <li class='dropdown '>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  用户分析 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/index/geo">地域分析</a> </li>
+                  <li> <a href="/index/attr">用户属性</a> </li>
+                </ul>
+              </li>
+
+              <li class="">
+                <a href="/index/setting">设置</a>
+              </li>
+
+            </ul>
+          </div> -->
+        </nav><!-- /.navbar -->
+
+      </div><!-- /#top -->
+      <div id="left">
+
+        <!-- #menu -->
+        <ul id="menu" class="">
+
+          <li class="active">
+            <a href="index.html">
+              <i class="fa fa-dashboard"></i> 概述
+            </a>
+          </li>
+
+          <li class="active">
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">
+              <i class="fa fa-bookmark"></i> 个性化推荐
+              <span class="fa fa-angle-down"></span>
+            </a>
+            <ul id="collapse1" class="panel-collapse in">
+              <li><a href="report.html"><i class="fa fa-angle-right"></i> 推荐报告</a></li>
+              <li><a href="recommendations.html"><i class="fa fa-angle-right"></i> 所有推荐</a></li>
+              <li><a href="new-rcmd.html"><i class="fa fa-angle-right"></i> 新建推荐</a></li>
+            </ul>
+          </li>
+
+          <li >
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse2">
+              <i class="fa fa-group"></i> 用户分析
+              <span class="fa fa-angle-down"></span>
+            </a>
+            <ul id="collapse2" class="panel-collapse in">
+              <li>
+                <a href="geo.html"><i class="fa fa-angle-right"></i> 地域分析</a>
+              </li>
+              <li>
+                <a href="attr.html"><i class="fa fa-angle-right"></i> 用户属性</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href="setting.html">
+              <i class="fa fa-cog"></i> 设置</a>
+          </li>
+          
+        </ul><!-- /#menu -->
+      </div><!-- /#left -->
+      <script type="text/javascript">
+//菜单高亮显示
+$(function(){
+    var current_url = location.href.toLocaleLowerCase();
+
+    var current_link = "";
+    var num = 0;
+    var first;
+    $("#menu ul a").each(function(){
+
+       current_link = $(this).attr("href").toLocaleLowerCase();
+
+       if (current_url.indexOf(current_link) != -1 ) {
+
+        if(num === 0){
+          $(this).addClass("active"); 
+          num ++; first = $(this);
+        } else if ($(this).attr("href").length > first.attr("href").length) {
+            $(this).addClass("active"); 
+            first.removeClass("active");
+        }
+
+        
+    }
+
+       });
+
+});
+//菜单箭头
+$("#menu .accordion-toggle").click(function(){
+    if( $(this).next().hasClass("in") ) {
+        $(this).find("span.fa").addClass("fa-angle-left").removeClass("fa-angle-down");
+    }
+    if( $(this).next().hasClass("collapse") ) {
+        $(this).find("span.fa").addClass("fa-angle-down").removeClass("fa-angle-left");
+    }
+});
+      </script>
+
+<div id="content">
+<h2>个性化推荐</h2>
+
+<div class="padding-m">
+<button type="button" class="btn btn-warning">暂停</button>
+<button type="button" class="btn btn-success">激活</button>
+<button type="button" class="btn btn-danger">删除</button>
+</div>
+<table class="table table-bordered table-hover">
+  <thead>
+    <tr>
+      <th><input type="checkbox"></th>
+      <th>名称</th>
+      <th>个性化推荐位</th>
+      <th>优先级</th>
+      <th>状态</th>
+      <th>推荐次数</th>
+      <th>观看次数</th>
+      <th>转化率</th>
+      <th>操作</th>
+    </tr>
+  </thead>
+
+  <tbody>
+      <tr>
+        <th><input type="checkbox"></th>
+        <td><a href="/recommendations/1">甄嬛传</a></td>
+        <td>首页个性推荐</td>
+        <td>1</td>     
+        <td><span class="text-danger">未激活</span></td>
+        <td>1000</td>
+        <td>0</td>
+        <td>0.000%</td>
+        <td><a href="/recommendations/1/edit">编辑</a>
+          <a data-confirm="Are you sure?" data-method="delete" href="/recommendations/1" rel="nofollow">报表</a>
+        </td>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <td><a href="/recommendations/2">爸爸去哪儿</a></td>
+        <td>详情页猜你喜欢</td>
+        <td>2</td>     
+        <td><span class="text-success">激活</span></td>
+        <td>2123</td>
+        <td>11</td>
+        <td>0.518%</td>
+        <td><a href="/recommendations/2/edit">编辑</a>
+          <a data-confirm="Are you sure?" data-method="delete" href="/recommendations/2" rel="nofollow">报表</a>
+        </td>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <td><a href="/recommendations/3">寻秦记</a></td>
+        <td>播放器返回推荐</td>
+        <td>3</td>     
+        <td><span class="text-warning">暂停</span></td>
+        <td>3221</td>
+        <td>543</td>
+        <td>16.858%</td>
+        <td><a href="/recommendations/3/edit">编辑</a>
+          <a data-confirm="Are you sure?" data-method="delete" href="/recommendations/3" rel="nofollow">报表</a>
+        </td>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <td><a href="/recommendations/4">我们结婚吧</a></td>
+        <td>首页个性推荐</td>
+        <td>5</td>     
+        <td><span class="">推荐结束</span></td>
+        <td>2123</td>
+        <td>43</td>
+        <td>2.025%</td>
+        <td><a href="/recommendations/4/edit">编辑</a>
+          <a data-confirm="Are you sure?" data-method="delete" href="/recommendations/4" rel="nofollow">报表</a>
+        </td>
+      </tr>
+      <tr>
+        <th><input type="checkbox"></th>
+        <td><a href="/recommendations/6">地心引力</a></td>
+        <td>首页个性推荐</td>
+        <td>1</td>     
+        <td><span class="text-danger">未激活</span></td>
+        <td>1212</td>
+        <td>0</td>
+        <td>0.000%</td>
+        <td><a href="/recommendations/6/edit">编辑</a>
+          <a data-confirm="Are you sure?" data-method="delete" href="/recommendations/6" rel="nofollow">报表</a>
+        </td>
+      </tr>
+  </tbody>
+</table>
+    <ul class="pagination pull-right">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+     </ul>
+<br>
+
+<a class="btn btn-primary" href="/recommendations/new">添加推荐</a>
+
+</div>
+</body>
+</html>

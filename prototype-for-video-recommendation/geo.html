@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RecommentVideo</title>
+  <link data-turbolinks-track="true" href="assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/daterangepicker-bs3.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/index.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/application.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="assets/jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/jquery.flot.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/bootstrap.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/daterangepicker.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/moment.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/application.js?body=1"></script>
+  <script src="http://cdn.bootcss.com/Chart.js/0.2.0/Chart.min.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="uDNzZTiyOCzCcdQgvNjuH4xUUKd3OA5WIAfOmqhNJpo=" name="csrf-token" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+      <div id="top">
+        <!-- .navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <header class="navbar-header">
+            <a href="/" class="navbar-brand">
+              <img alt="Logo" src="assets/logo.png" />
+            </a>
+          </header>
+          <div class="topnav">
+            <div class="btn-toolbar">
+              <div class="btn-group">
+                <a href="login.html" data-toggle="tooltip" data-original-title="注销" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+                  <span class="glyphicon glyphicon-off"></span>
+                </a>
+              </div>
+            </div>
+          </div><!-- /.topnav --> <!-- 
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="">
+                <a href="/">概述</a>
+              </li>
+
+              <li class='dropdown '>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  个性化推荐 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/index/report">推荐报告</a> </li>
+                  <li> <a href="/recommendations">所有推荐</a> </li>
+                  <li> <a href="/recommendations/new">新建推荐</a> </li>
+                </ul>
+              </li>
+
+              <li class='dropdown active'>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  用户分析 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/index/geo">地域分析</a> </li>
+                  <li> <a href="/index/attr">用户属性</a> </li>
+                </ul>
+              </li>
+
+              <li class="">
+                <a href="/index/setting">设置</a>
+              </li>
+
+            </ul>
+          </div> -->
+        </nav><!-- /.navbar -->
+
+      </div><!-- /#top -->
+      <div id="left">
+
+        <!-- #menu -->
+        <ul id="menu" class="">
+
+          <li class="">
+            <a href="index.html">
+              <i class="fa fa-dashboard"></i> 概述
+            </a>
+          </li>
+
+          <li class="">
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">
+              <i class="fa fa-bookmark"></i> 个性化推荐
+              <span class="fa fa-angle-down"></span>
+            </a>
+            <ul id="collapse1" class="panel-collapse in">
+              <li><a href="report.html"><i class="fa fa-angle-right"></i> 推荐报告</a></li>
+              <li><a href="recommendations.html"><i class="fa fa-angle-right"></i> 所有推荐</a></li>
+              <li><a href="new-rcmd.html"><i class="fa fa-angle-right"></i> 新建推荐</a></li>
+            </ul>
+          </li>
+
+          <li class="active">
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse2">
+              <i class="fa fa-group"></i> 用户分析
+              <span class="fa fa-angle-down"></span>
+            </a>
+            <ul id="collapse2" class="panel-collapse in">
+              <li>
+                <a href="geo.html"><i class="fa fa-angle-right"></i> 地域分析</a>
+              </li>
+              <li>
+                <a href="attr.html"><i class="fa fa-angle-right"></i> 用户属性</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href="setting.html">
+              <i class="fa fa-cog"></i> 设置</a>
+          </li>
+          
+        </ul><!-- /#menu -->
+      </div><!-- /#left -->
+      <script type="text/javascript">
+//菜单高亮显示
+$(function(){
+    var current_url = location.href.toLocaleLowerCase();
+
+    var current_link = "";
+    var num = 0;
+    var first;
+    $("#menu ul a").each(function(){
+
+       current_link = $(this).attr("href").toLocaleLowerCase();
+
+       if (current_url.indexOf(current_link) != -1 ) {
+
+        if(num === 0){
+          $(this).addClass("active"); 
+          num ++; first = $(this);
+        } else if ($(this).attr("href").length > first.attr("href").length) {
+            $(this).addClass("active"); 
+            first.removeClass("active");
+        }
+
+        
+    }
+
+       });
+
+});
+//菜单箭头
+$("#menu .accordion-toggle").click(function(){
+    if( $(this).next().hasClass("in") ) {
+        $(this).find("span.fa").addClass("fa-angle-left").removeClass("fa-angle-down");
+    }
+    if( $(this).next().hasClass("collapse") ) {
+        $(this).find("span.fa").addClass("fa-angle-down").removeClass("fa-angle-left");
+    }
+});
+      </script>
+
+<div id="content">
+<h2>地域分析</h2>
+
+<div class="listbox">
+<ul>
+<li><span>推荐次数</span><div>422121</div></li>
+<li><span>观看次数</span><div>20121</div></li>
+<li><span>独立终端数</span><div>19009</div></li>
+<li><span>转化率</span><div>4.76%</div></li>
+<li><span>平均访问时长</span><div>1:03:22</div></li>
+</ul><div class="clearfix"></div>
+</div>
+<br/>
+
+      <div class="well well-white">
+<div class="btn-group" style="margin:0 0 15px 15px;">
+  <button type="button" class="btn btn-default active">请求数</button>
+  <button type="button" class="btn btn-default">展现数</button>
+  <button type="button" class="btn btn-default">点击数</button>
+  <button type="button" class="btn btn-default">转化率</button>
+  <button type="button" class="btn btn-default">平均访问时长</button>
+</div>
+		<canvas id="canvas" height="250" width="800px"></canvas>
+	<script>
+		var barChartData = {
+			labels : ["山东","广东","浙江","安徽","湖北","江苏","湖南","河南","吉林","辽宁","福建","广西","上海"],
+			datasets : [
+				{
+					fillColor : "rgba(92,184,92,1)",
+					strokeColor : "rgba(76,174,76,1)",
+					data : [39213,30832,27321,27299,20929,19999,17897,16987,11972,10098,9000,5321,3212]
+				}
+			]
+		}
+
+	var myLine = new Chart(document.getElementById("canvas").getContext("2d")).Bar(barChartData);
+	</script>
+
+	<div class="clearfix"></div>
+      </div>
+
+
+
+<h3>详细报表</h3>
+<table class="table table-bordered table-hover">
+        <thead>
+          <tr>
+            <th>地域</th>
+            <th>推荐次数</th>
+            <th>观看次数</th>
+            <th>独立终端数</th>
+            <th>转化率</th>
+            <th>平均使用时长</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th>江苏</th>
+            <td>2100</td>
+            <td>201</td>
+            <td>199</td>
+            <td>9.57%</td>
+            <td>1:30:10</td>
+          </tr>
+          <tr>
+            <th>广东</th>
+            <td>1220</td>
+            <td>111</td>
+            <td>100</td>
+            <td>9.09%</td>
+            <td>1:10:30</td>
+          </tr>
+          <tr>
+            <td>上海</td>
+            <td>3424</td>
+            <td>321</td>
+            <td>300</td>
+            <td>9.37%</td>
+            <td>1:32:08</td>
+          </tr>
+          <tr>
+            <th>江苏</th>
+            <td>2100</td>
+            <td>201</td>
+            <td>199</td>
+            <td>9.57%</td>
+            <td>1:30:10</td>
+          </tr>
+          <tr>
+            <th>广东</th>
+            <td>1220</td>
+            <td>111</td>
+            <td>100</td>
+            <td>9.09%</td>
+            <td>1:10:30</td>
+          </tr>
+          <tr>
+            <td>上海</td>
+            <td>3424</td>
+            <td>321</td>
+            <td>300</td>
+            <td>9.37%</td>
+            <td>1:32:08</td>
+          </tr>
+          <tr>
+            <th>江苏</th>
+            <td>2100</td>
+            <td>201</td>
+            <td>199</td>
+            <td>9.57%</td>
+            <td>1:30:10</td>
+          </tr>
+          <tr>
+            <th>广东</th>
+            <td>1220</td>
+            <td>111</td>
+            <td>100</td>
+            <td>9.09%</td>
+            <td>1:10:30</td>
+          </tr>
+          <tr>
+            <td>上海</td>
+            <td>3424</td>
+            <td>321</td>
+            <td>300</td>
+            <td>9.37%</td>
+            <td>1:32:08</td>
+          </tr>
+        </tbody>
+      </table>
+    <ul class="pagination pull-right">
+        <li class="disabled"><a href="#">&laquo;</a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">3</a></li>
+        <li><a href="#">4</a></li>
+        <li><a href="#">5</a></li>
+        <li><a href="#">&raquo;</a></li>
+     </ul>
+</div>
+</body>
+</html>

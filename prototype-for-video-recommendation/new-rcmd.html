@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RecommentVideo</title>
+  <link data-turbolinks-track="true" href="assets/bootstrap.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/daterangepicker-bs3.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/font-awesome.min.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/index.css?body=1" media="all" rel="stylesheet" />
+<link data-turbolinks-track="true" href="assets/application.css?body=1" media="all" rel="stylesheet" />
+  <script data-turbolinks-track="true" src="assets/jquery.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/jquery.flot.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/bootstrap.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/daterangepicker.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/moment.min.js?body=1"></script>
+<script data-turbolinks-track="true" src="assets/application.js?body=1"></script>
+  <script src="http://cdn.bootcss.com/Chart.js/0.2.0/Chart.min.js"></script>
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="uDNzZTiyOCzCcdQgvNjuH4xUUKd3OA5WIAfOmqhNJpo=" name="csrf-token" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+</head>
+<body>
+      <div id="top">
+        <!-- .navbar -->
+        <nav class="navbar navbar-inverse navbar-static-top">
+
+          <!-- Brand and toggle get grouped for better mobile display -->
+          <header class="navbar-header">
+            <a href="/" class="navbar-brand">
+              <img alt="Logo" src="assets/logo.png" />
+            </a>
+          </header>
+          <div class="topnav">
+            <div class="btn-toolbar">
+              <div class="btn-group">
+                <a href="login.html" data-toggle="tooltip" data-original-title="注销" data-placement="bottom" class="btn btn-metis-1 btn-sm">
+                  <span class="glyphicon glyphicon-off"></span>
+                </a>
+              </div>
+            </div>
+          </div><!-- /.topnav --> <!-- 
+          <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+              <li class="">
+                <a href="/">概述</a>
+              </li>
+
+              <li class='dropdown active'>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  个性化推荐 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/index/report">推荐报告</a> </li>
+                  <li> <a href="/recommendations">所有推荐</a> </li>
+                  <li> <a href="/recommendations/new">新建推荐</a> </li>
+                </ul>
+              </li>
+
+              <li class='dropdown '>
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                  用户分析 <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                  <li> <a href="/index/geo">地域分析</a> </li>
+                  <li> <a href="/index/attr">用户属性</a> </li>
+                </ul>
+              </li>
+
+              <li class="">
+                <a href="/index/setting">设置</a>
+              </li>
+
+            </ul>
+          </div> -->
+        </nav><!-- /.navbar -->
+
+      </div><!-- /#top -->
+       <div id="left">
+
+        <!-- #menu -->
+        <ul id="menu" class="">
+
+          <li class="active">
+            <a href="index.html">
+              <i class="fa fa-dashboard"></i> 概述
+            </a>
+          </li>
+
+          <li class="active">
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse1">
+              <i class="fa fa-bookmark"></i> 个性化推荐
+              <span class="fa fa-angle-down"></span>
+            </a>
+            <ul id="collapse1" class="panel-collapse in">
+              <li><a href="report.html"><i class="fa fa-angle-right"></i> 推荐报告</a></li>
+              <li><a href="recommendations.html"><i class="fa fa-angle-right"></i> 所有推荐</a></li>
+              <li><a href="new-rcmd.html"><i class="fa fa-angle-right"></i> 新建推荐</a></li>
+            </ul>
+          </li>
+
+          <li >
+            <a class="accordion-toggle" data-toggle="collapse" href="#collapse2">
+              <i class="fa fa-group"></i> 用户分析
+              <span class="fa fa-angle-down"></span>
+            </a>
+            <ul id="collapse2" class="panel-collapse in">
+              <li>
+                <a href="geo.html"><i class="fa fa-angle-right"></i> 地域分析</a>
+              </li>
+              <li>
+                <a href="attr.html"><i class="fa fa-angle-right"></i> 用户属性</a>
+              </li>
+            </ul>
+          </li>
+
+          <li class="">
+            <a href="setting.html">
+              <i class="fa fa-cog"></i> 设置</a>
+          </li>
+          
+        </ul><!-- /#menu -->
+      </div><!-- /#left -->
+      <script type="text/javascript">
+//菜单高亮显示
+$(function(){
+    var current_url = location.href.toLocaleLowerCase();
+
+    var current_link = "";
+    var num = 0;
+    var first;
+    $("#menu ul a").each(function(){
+
+       current_link = $(this).attr("href").toLocaleLowerCase();
+
+       if (current_url.indexOf(current_link) != -1 ) {
+
+        if(num === 0){
+          $(this).addClass("active"); 
+          num ++; first = $(this);
+        } else if ($(this).attr("href").length > first.attr("href").length) {
+            $(this).addClass("active"); 
+            first.removeClass("active");
+        }
+
+        
+    }
+
+       });
+
+});
+//菜单箭头
+$("#menu .accordion-toggle").click(function(){
+    if( $(this).next().hasClass("in") ) {
+        $(this).find("span.fa").addClass("fa-angle-left").removeClass("fa-angle-down");
+    }
+    if( $(this).next().hasClass("collapse") ) {
+        $(this).find("span.fa").addClass("fa-angle-down").removeClass("fa-angle-left");
+    }
+});
+      </script>
+
+<div id="content">
+<h2>新建推荐</h2>
+
+<br/>
+<div class="well well-lg">
+<form accept-charset="UTF-8" action="/recommendations" class="form-horizontal" id="new_recommendation" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="uDNzZTiyOCzCcdQgvNjuH4xUUKd3OA5WIAfOmqhNJpo=" /></div>
+<br/>
+  <div class="form-group">
+    <label class="col-sm-2 control-label">名称</label>
+    <div class="col-sm-3">
+      <input class="form-control" id="recommendation_name" name="recommendation[name]" type="text" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">选择推荐位</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="recommendation[zone]" >
+      <option value = "首页个性推荐">首页个性推荐</option>
+      <option value = "详情页面猜你喜欢">详情页面猜你喜欢</option>
+      <option>播放器返回推荐位</option></select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">优先级</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="recommendation[priority]" >
+          <option value="1">1  -最低</option>
+          <option value="2">2  -低</option>
+          <option value="3">3  -中等</option>
+          <option>4  -高</option>
+          <option>5  -最高</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">推荐规则</label>
+    <div class="col-sm-3">
+      <select class="form-control" name="recommendation[rule]" >
+          <option value="1">随机</option>
+          <option value="2">顺序</option>
+          <option value="3">权重</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">日期</label>
+    <div class="col-sm-3">
+      <input type="text" id="reservation" value="03/18/2013 - 03/23/2013" class="form-control" /> 
+    </div>
+  </div>
+<script type="text/javascript">
+               $(document).ready(function() {
+                  $('#reservation').daterangepicker();
+               });
+</script>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">推荐次数</label>
+    <div class="col-sm-3">
+      <input class="form-control" id="recommendation_rcmd_times" name="recommendation[rcmd_times]" type="number" />
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">推荐视频内容ID</label>
+    <div class="col-sm-3">
+      <input class="form-control" id="recommendation_watch_times" name="recommendation[watch_times]" type="number" />
+    </div>
+    <div class="col-sm-1">
+      <input type="button" class="btn btn-default form-control" value="搜索">  
+    </div>
+  </div>
+
+  <div class="form-group">
+    <label class="col-sm-2 control-label">备注</label>
+    <div class="col-sm-3">
+      <textarea class="form-control"> </textarea>
+    </div>
+  </div>
+
+  <div class="form-group">
+    <div class="col-sm-offset-2 col-sm-3">
+      <input class="btn btn-primary btn-lg" name="commit" type="submit" value="提 交" />
+    </div>
+  </div>
+<input class="hidden" id="recommendation_state" name="recommendation[state]" type="text" value="未激活" />
+<input class="hidden" id="recommendation_watch_times" name="recommendation[watch_times]" type="text" value="0" />
+</form></div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,118 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+.padding-m{ padding: 10px 0;}
+.well-white{ background-color: #fff; }
+
+a:focus {outline:none;} 
+
+/*logo*/
+.navbar-brand img{ padding: 8px 15px 4px; }
+
+/*left menu*/
+#left {float:left; width:220px;}
+#menu {
+    background-color: #333333;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05);
+    overflow: hidden;
+    position: relative;}
+#menu, #menu ul {
+    list-style: none outside none;
+    margin: 0;
+    padding: 0;
+}
+#menu > li {
+    display: block;
+    margin: 0;
+}
+#menu li {
+    position: relative;
+}
+#menu li span{
+    float:right; padding-top:3px;
+}
+#menu li > a {
+    text-decoration: none;
+}
+#menu > li > a {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.05) inset;
+    color: #CCCCCC;
+    display: block;
+    padding: 10px 15px;
+    position: relative;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+#menu > li > a {
+    color: #CCCCCC;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.5);
+}
+#menu > li.active > a{
+    background-color:#1A1A1A;
+}
+#menu > li > a:hover{
+    background-color:#444;
+}
+#menu li > ul {
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    left: auto;
+    position: relative;
+    top: auto;
+    width: auto;
+    z-index: auto;
+     padding:0;
+}
+#menu > li ul > li {
+    padding: 5px 10px;
+}
+#menu > li ul > li a:hover {
+    background-color:#444;
+}
+#menu > li ul > li .active {
+    background-color:#444;
+}
+#menu ul a {
+    color: #CCCCCC;
+    display: block;
+    font-size: 13px;
+    padding: 2px 15px;
+}
+/*end left menu*/
+
+/* 地域分析页面 */
+.listbox ul{list-style:none; padding: 0; margin: 0;}
+.listbox li{ width: 20%; border: 1px solid #DDDDDD; float: left;
+ margin: 0 -1px -1px 0; padding: 10px; text-align: center;}
+ .listbox li:hover{ background-color: #eee;}
+ .listbox li div{ font-size: 30px; line-height: 50px;}
+
+ /* end 地域分析页面 */
+
+ /* style for chart */
+.chart_table{ width: 100%;}
+.chart_table td{ padding: 8px 0;}
+.chart_bg{ background-color: #5CB85C; height: 20px; float: left; margin-right: 5px;}
+
+.gender_persentage_text{ font-size: 30px;}
+.man_off{ background: url(man_off.png) repeat-x; height: 49px; width: 210px; float: right;}
+.man_on{ background: url(man_on.png) repeat-x; height: 49px;float: right; }
+.woman_off{ background: url(woman_off.png) repeat-x; height: 49px; width: 270px;}
+.woman_on{ background: url(woman_on.png) repeat-x; height: 49px; }
+
+.chart_with_des{ float: left;}
+.bar_chart_des { float: left; }
+ /* end style for chart */
+
+ /*style of setting page*/
+ .line-height30{line-height: 30px;}
