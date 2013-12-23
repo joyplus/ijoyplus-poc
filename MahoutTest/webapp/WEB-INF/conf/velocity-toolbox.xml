@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<toolbox>
+	<tool>
+		<key>link</key>
+		<scope>request</scope>
+		<class>my.toolbox.LinkTool</class>
+	</tool>
+	<tool>
+		<key>resource</key>
+		<scope>request</scope>
+		<class>my.toolbox.ResourceTool</class>
+	</tool>
+	<tool>
+		<key>format</key>
+		<scope>application</scope>
+		<class>my.toolbox.FormatTool</class>
+	</tool>
+	<tool>
+		<key>Mahout</key>
+		<scope>application</scope>
+		<class>my.mahout.Mahout</class>
+	</tool>
+</toolbox>

@@ -1,0 +1,31 @@
+#set($layout = "_index.vm")
+#set($page_title = "mahout 测试")
+
+<span>输入用户的ID：</span><input type="text" name="uid" id="uid"/><br/>
+<span>输入推荐个数：</span><input type="text" name="num" id="num"/><br/>
+<label class="radio">
+  <input type="radio" name="type" id="optionsRadios1" value="user" checked>
+  <span>基于用户推荐</span>
+</label>
+<label class="radio">
+  <input type="radio" name="type" id="optionsRadios2" value="item">
+  <span>基于内容推荐</span>
+</label>
+<label class="radio">
+  <input type="radio" name="type" id="optionsRadios2" value="user-item">
+  <span>用户与内容综合推荐</span>
+</label>
+<a href="javascript:;" id="btn">查看推荐内容</a>
+<script>
+	$("#btn").click(function(){
+		var uid = $("#uid").val();
+		var num = $("#num").val();
+		var type= $("input[name='type']:checked").val();
+		if(uid.length<1 || num.length<1) {
+			alert("请除入参数");
+			return ;
+		}
+		var params = "?uid="+uid+"&num="+num+"&type="+type;
+		location.href = "$link.link("test")"+params;
+	});
+</script>

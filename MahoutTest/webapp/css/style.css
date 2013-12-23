@@ -1,0 +1,43 @@
+body {
+    font-family: 'Microsoft YaHei', helvetica, Segeo, Arial;
+    background-image: -webkit-gradient(linear, 50% 0%, 50% 160, color-stop(62.5%, rgba(255, 255, 255, 0.5)), color-stop(100%, rgba(255, 255, 255, 0)));
+    background-image: -webkit-linear-gradient(top, rgba(255, 255, 255, 0.5) 100px, rgba(255, 255, 255, 0) 160px);
+    background-image: -moz-linear-gradient(top, rgba(255, 255, 255, 0.5) 100px, rgba(255, 255, 255, 0) 160px);
+    background-image: -o-linear-gradient(top, rgba(255, 255, 255, 0.5) 100px, rgba(255, 255, 255, 0) 160px);
+    background-image: linear-gradient(top, rgba(255, 255, 255, 0.5) 100px, rgba(255, 255, 255, 0) 160px)
+	
+}
+
+.blog-content p {
+	text-indent:2em;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.blog-content li {
+	line-height:180%
+}
+
+.blog-content img {
+	border: 1px solid #e5e5e5;
+}
+
+.width5 {width:5%}
+.width10 {width:10%}
+.width15 {width:15%}
+.width20 {width:20%}
+.width25 {width:25%}
+.width30 {width:30%}
+.width35 {width:35%}
+.width40 {width:40%}
+.width45 {width:45%}
+.width50 {width:50%}
+.width55 {width:55%}
+.width60 {width:60%}
+.width65 {width:65%}
+.width70 {width:70%}
+.width75 {width:75%}
+.width80 {width:80%}
+.width85 {width:85%}
+.width90 {width:90%}
+.width95 {width:95%}

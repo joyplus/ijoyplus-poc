@@ -1,0 +1,49 @@
+#set($layout = "_index.vm")
+#set($page_title = "mahout 测试结果")
+#set($uid = $link.lparam("uid", 1))
+#set($num = $link.param("num", 3))
+#set($type = $link.param("type","user"))
+#set($items = $Mahout.recommend($uid, $num, $type))
+#set($users = $Mahout.userMovies($uid))
+<p>推荐结果：</p>
+<table class="table table-condensed table-bordered">
+	<thead>
+        <th>影视id</th>
+        <th>名称</th>
+        <th>时间</th>
+        <th>类型</th>
+        <th>地区</th>
+	</thead>
+	<tbody>
+        #foreach($i in $items) 
+            <tr>
+                <td>$i.id</td>
+                <td>$i.name</td>
+                <td>$i.year</td>
+                <td>$i.type</td>
+                <td>$i.area</td>
+        	</tr>
+        #end
+    </tbody>
+</table>
+<p>用户数据：</p>
+<table class="table table-condensed table-bordered">
+	<thead>
+        <th>影视id</th>
+        <th>名称</th>
+        <th>时间</th>
+        <th>类型</th>
+        <th>地区</th>
+	</thead>
+	<tbody>
+        #foreach($i in $users) 
+            <tr>
+                <td>$i.id</td>
+                <td>$i.name</td>
+                <td>$i.year</td>
+                <td>$i.type</td>
+                <td>$i.area</td>
+        	</tr>
+        #end
+    </tbody>
+</table>

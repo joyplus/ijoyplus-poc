@@ -1,0 +1,44 @@
+#*
+* 全局宏
+*#
+
+##以相对路径方式嵌入动态页面
+#macro(invoke $__p_page)
+    #if($__p_page.startsWith("/"))
+		#parse($__p_page)
+    #else
+		#set($__uri = $resource.this_vm())
+		#set($__path = $__uri.substring(0, $__uri.lastIndexOf("/")))
+		#parse("$__path/$__p_page")
+    #end
+#end
+
+##分页宏
+#macro(pager $__uri $__obj_count $__page_size)
+#if($__obj_count > $__page_size)
+    #if($__uri.indexOf("?")>=0)#set($param_char='&')#else#set($param_char='?')#end
+    #if(!$__uri.endsWith("?") && !$__uri.endsWith("&"))
+		#set($__p_uri = "${__uri}${param_char}")
+	#else
+		#set($__p_uri = $__uri)
+	#end
+    #set($PAGE_COUNT = $format.pageCount($__obj_count, $__page_size))
+    #set($__p = $link.param("p",1))
+	#if($__p <= $PAGE_COUNT)
+    #set($pre_page = $__p - 1)
+    #set($next_page = $__p + 1)
+	#if($__p > 3)
+    	#set($begin_idx = $__p - 3)
+	#else
+		#set($begin_idx = 1)
+	#end	
+    #set($end_idx = $begin_idx + 9)
+    #if($end_idx > $PAGE_COUNT)#set($end_idx = $PAGE_COUNT)#end
+		<div class="pagination  pagination-centered">
+			<ul>
+				#if($__p > 1)<li><a href="${__p_uri}p=$pre_page">&lt;</a></li>#end#if($begin_idx > 1)<li class='page'><a href="${__p_uri}">1</a></li>#end#foreach($idx in [$begin_idx..$end_idx])#if($idx != $__p)<li class='page'><a href="${__p_uri}p=$idx">$idx</a></li>#else<li class='active'><a href="${__p_uri}p=$idx">$idx</a></li>#end#end#if($end_idx < $PAGE_COUNT)<li><a href="${__p_uri}p=$PAGE_COUNT">$PAGE_COUNT</a></li>#end#if($__p < $PAGE_COUNT)<li><a href="${__p_uri}p=$next_page">&gt;</a></li>#end
+   			</ul>
+		</div>
+	#end
+#end
+#end
